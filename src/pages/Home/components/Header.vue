@@ -1,0 +1,56 @@
+<template>
+    <div class="header">
+      <div class="header-left">
+        <div class="iconfont icon-fanhui back-icon"></div>
+      </div>
+      <div class="header-input">
+        <span class="iconfont icon-sousuo"></span>
+        输入城市/景点/游玩主题</div>
+      <div class="header-right">
+        城市
+        <span class="iconfont icon-jiantou arrow-icon"></span>
+      </div>
+    </div>
+</template>
+
+<script>
+    export default {
+        name: 'Header'
+    }
+</script>
+
+<style lang="stylus" scoped >
+  @import "~styles/varibles.styl"
+  .header
+     display flex
+     line-height .86rem
+     background $bgColor
+     color #fff
+    .header-left
+      width .84rem
+      line-height .84rem
+      float left
+      font-size .4rem
+      .back-icon
+        text-align center
+        font-size .4rem
+    .header-input
+      height .64rem
+      padding-left .2rem
+      line-height .64rem
+      margin-top .1rem
+      margin-left .2rem
+      flex 1
+      background #fff
+      border-radius .1rem
+      color #ccc
+    .header-right
+      width 1.74rem
+      float right
+      font-size .4rem
+      line-height .84rem
+      text-align center
+      .arrow-icon
+        margin-left -.04rem
+        font-size .24rem
+</style>

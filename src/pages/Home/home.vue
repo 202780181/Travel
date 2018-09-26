@@ -1,12 +1,19 @@
 <template>
     <div>
-      hello aaaa
+      <homeheader></homeheader>
+      <swiper></swiper>
     </div>
 </template>
 
 <script>
+  import Homeheader from './components/Header'
+  import Swiper from './components/Swiper'
     export default {
-        name: "home"
+        name: 'home',
+      components:{
+        Homeheader,
+        Swiper
+      }
     }
 </script>
 

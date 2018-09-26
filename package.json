@@ -14,8 +14,15 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "amfe-flexible": "^2.2.1",
     "fastclick": "^1.0.6",
+    "lib-flexible": "^0.3.2",
+    "px2rem-loader": "^0.1.9",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "swiper": "^4.4.1",
     "vue": "^2.5.2",
+    "vue-awesome-swiper": "^2.6.7",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
