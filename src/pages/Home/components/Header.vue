@@ -28,17 +28,18 @@
      color #fff
     .header-left
       width .84rem
-      line-height .84rem
+      line-height 1.1rem
       float left
       font-size .4rem
+      font-weight bolder
       .back-icon
         text-align center
         font-size .4rem
     .header-input
-      height .64rem
+      height .84rem
       padding-left .2rem
-      line-height .64rem
-      margin-top .1rem
+      line-height .84rem
+      margin-top .14rem
       margin-left .2rem
       flex 1
       background #fff
@@ -48,7 +49,7 @@
       width 1.74rem
       float right
       font-size .4rem
-      line-height .84rem
+      line-height 1.1rem
       text-align center
       .arrow-icon
         margin-left -.04rem
