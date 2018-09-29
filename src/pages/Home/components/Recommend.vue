@@ -4,7 +4,7 @@
        <img class="mp-title-img" src="http://img1.qunarzz.com/piao/fusion/1711/89/ebc329f16c55bb02.png" alt="猜你喜欢">
        热销推荐</div>
      <ul>
-       <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+       <li class="item border-bottom" v-for="item of list" :key="item.id">
          <img class="item-img" :src="item.imgUrl">
          <div class="item-info">
            <p class="item-title">{{item.title}}</p>
@@ -30,52 +30,9 @@
 <script>
     export default {
         name: "Recommend",
-      data (){
-         return {
-           recommendList:[{
-             id: '0001',
-             imgUrl: 'http://img1.qunarzz.com/sight/p0/1507/36/ce3d2d6c9ab44d67ae68d940b8781829.water.jpg_200x200_0938a8f2.jpg',
-             title: '北京野生动物园',
-             money: '69.8',
-             area: '大兴区',
-             review: '5444',
-             start:'5'
-           },{
-             id: '0002',
-             imgUrl:'http://img1.qunarzz.com/sight/p0/1508/89/895a1b7add84f23faca053ce9e3153db.water.jpg_200x200_99ae30ee.jpg',
-             title: '北京欢乐谷',
-             money: '49.9',
-             area: '朝阳区',
-             review: '56546',
-             start: '5'
-           },{
-             id: '0003',
-             imgUrl: 'http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_200x200_1bc99086.jpg',
-             title: '故宫',
-             money: '20',
-             area: '东城区',
-             review: '36354',
-             start: '5'
-
-           },{
-             id: '0004',
-             imgUrl: 'http://img1.qunarzz.com/sight/p0/1804/c8/c88bb5e69c9a9c5ea3.img.jpg_200x200_740720ff.jpg',
-             title: '古北水镇',
-             money: '150',
-             area: '密云区',
-             review: '359656',
-             start: '5'
-           },{
-             id: '0005',
-             imgUrl: 'http://img1.qunarzz.com/sight/p0/201308/08/41150dacc0e3a0c8c8d65eac.jpg_200x200_c62292e9.jpg',
-             title: '北京动物园',
-             money: '163',
-             area: '西城区',
-             review: '71156',
-             start: '5'
-           }]
-         }
-      }
+        props:{
+          list:Array
+        }
     }
 </script>
 

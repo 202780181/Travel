@@ -6,6 +6,7 @@ import list from '@/pages/List/list'
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
