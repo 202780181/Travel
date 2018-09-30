@@ -18,7 +18,7 @@
   .Header
     position relative
     height $headHeight
-    line-height $headHeightg
+    line-height $headHeight
     overflow hidden
     text-align center
     color #fff
