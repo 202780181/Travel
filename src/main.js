@@ -10,8 +10,6 @@ import 'styles/reset.css'
 import 'styles/border.css'
 import 'swiper/dist/css/swiper.css'
 
-import axios from 'axios'
-Vue.prototype.$http = axios
 Vue.use(vuex)
 Vue.config.productionTip = false
 Vue.use(VueAwesomeSwiper)
