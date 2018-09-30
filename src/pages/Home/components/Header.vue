@@ -6,10 +6,12 @@
       <div class="header-input">
         <span class="iconfont icon-sousuo"></span>
         输入城市/景点/游玩主题</div>
-      <div class="header-right">
-        {{this.city}}
-        <span class="iconfont icon-jiantou arrow-icon"></span>
-      </div>
+      <router-link to="/city">
+        <div class="header-right">
+          {{this.city}}
+          <span class="iconfont icon-jiantou arrow-icon"></span>
+        </div>
+      </router-link>
     </div>
 </template>
 
@@ -54,6 +56,7 @@
       font-size .4rem
       line-height 1.1rem
       text-align center
+      color #fff
       .arrow-icon
         margin-left -.04rem
         font-size .24rem

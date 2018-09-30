@@ -15,10 +15,10 @@
 
 <script>
   export default {
-    name: 'Icons',
-    props:{
-          list:Array
-    },
+  name: 'Icons',
+  props:{
+     list:Array
+  },
     data(){
   return {
         swiperOption:{},

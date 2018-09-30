@@ -16,16 +16,16 @@ import HomeIcons from './components/Icons'
 import HomeRecommend from './components/Recommend'
 import HomeWeekend from './components/Weekend'
 import axios from 'axios'
- export default {
-      name: 'home',
+    export default {
+        name: 'home',
       data (){
-        return{
-          city:'',
-          swiperList:[],
-          iconList:[],
-          recommendList:[],
-          weekList:[]
-        }
+            return{
+              city:'',
+              swiperList:[],
+              iconList:[],
+              recommendList:[],
+              weekList:[]
+            }
       },
       components:{
         Homeheader,
