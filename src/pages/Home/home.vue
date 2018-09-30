@@ -9,14 +9,15 @@
 </template>
 
 <script>
-import axios from 'axios'
+
 import Homeheader from './components/Header'
 import HomeSwiper from './components/Swiper'
 import HomeIcons from './components/Icons'
 import HomeRecommend from './components/Recommend'
 import HomeWeekend from './components/Weekend'
-    export default {
-        name: 'home',
+import axios from 'axios'
+ export default {
+      name: 'home',
       data (){
         return{
           city:'',
@@ -26,7 +27,6 @@ import HomeWeekend from './components/Weekend'
           weekList:[]
         }
       },
-
       components:{
         Homeheader,
         HomeSwiper,
@@ -37,20 +37,20 @@ import HomeWeekend from './components/Weekend'
       methods:{
         gethomeinfo (){
           axios.get('/api/index.json')
-            .then(function(res) {
-              res=res.data
-              if(res.ret){
-                const data= res.data
-                this.city=data.city
-                this.iconList=data.iconList
-                this.recommendList =data.recommendList
+            .then(this.getHomeinfosucc)
+        },
+        getHomeinfosucc(res){
+          res =res.data
+          const data = res.data
+          if (res.ret && res.data) {
+              this.city = data.city
+              this.swiperList =data.swiperList
+              this.iconList = data.iconList
+              this.recommendList = data.recommendList
+              this.weekList = data.weekList
 
-              }
-            });
+          }
         }
-      },
-      computed:{
-
       },
       mounted (){
         this.gethomeinfo()

@@ -1,5 +1,5 @@
 <template>
-    $END$
+    <div></div>
 </template>
 
 <script>
@@ -8,6 +8,6 @@
     }
 </script>
 
-<style scoped>
+<style lang="stylus" scoped>
 
 </style>
