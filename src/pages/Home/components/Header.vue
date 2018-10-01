@@ -6,16 +6,21 @@
       <div class="header-input">
         <span class="iconfont icon-sousuo"></span>
         输入城市/景点/游玩主题</div>
-      <div class="header-right">
-        城市
-        <span class="iconfont icon-jiantou arrow-icon"></span>
-      </div>
+      <router-link to="/city">
+        <div class="header-right">
+          {{this.city}}
+          <span class="iconfont icon-jiantou arrow-icon"></span>
+        </div>
+      </router-link>
     </div>
 </template>
 
 <script>
     export default {
-        name: 'Header'
+        name: 'Header',
+        props:{
+          city:String
+        }
     }
 </script>
 
@@ -28,17 +33,18 @@
      color #fff
     .header-left
       width .84rem
-      line-height .84rem
+      line-height 1.1rem
       float left
       font-size .4rem
+      font-weight bolder
       .back-icon
         text-align center
         font-size .4rem
     .header-input
-      height .64rem
+      height .84rem
       padding-left .2rem
-      line-height .64rem
-      margin-top .1rem
+      line-height .84rem
+      margin-top .14rem
       margin-left .2rem
       flex 1
       background #fff
@@ -48,8 +54,9 @@
       width 1.74rem
       float right
       font-size .4rem
-      line-height .84rem
+      line-height 1.1rem
       text-align center
+      color #fff
       .arrow-icon
         margin-left -.04rem
         font-size .24rem

@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
-    <swiper :options="swiperOption">
-      <swiper-slide v-for="item of swiperList" :key="item.id">
+    <swiper :options="swiperOption" v-if="swipershow">
+      <swiper-slide v-for="item of list" :key="item.id">
         <img class="swiper-img" :src="item.imgUrl">
       </swiper-slide>
       <div class="swiper-pagination"  slot="pagination"></div>
@@ -13,6 +13,9 @@
   import { swiper, swiperSlide } from 'vue-awesome-swiper'
     export default {
       name: "Swiper",
+      props:{
+        list:Array
+      },
       data () {
           return {
             swiperOption: {
@@ -25,26 +28,17 @@
               observeParents:true,
               loop:true,
             },
-            swiperList:[
-              {
-                id:'001',
-                imgUrl:'http://img1.qunarzz.com/piao/fusion/1809/6a/847ac7b98f10e202.jpg_750x200_f0593cb5.jpg'
-              },
-              {
-                id:'002',
-                imgUrl:'http://img1.qunarzz.com/piao/fusion/1806/1c/4847ea66072c7b02.jpg_750x200_c32457fb.jpg'
-              },
-              {
-                id:'003',
-                imgUrl:'http://img1.qunarzz.com/piao/fusion/1801/bd/04554e7c67650302.jpg_750x200_4293d60a.jpg'
-              }
-              ]
           }
       },
       components: {
         swiper,
         swiperSlide
       },
+      computed:{
+        swipershow (){     //解决页面刚渲染时显示的总是第二页的问题
+          return this.list.length
+        }
+      }
     }
 </script>
 
@@ -53,7 +47,7 @@
     overflow hidden
     width 100%
     height 0
-    padding-bottom 31.25%
+    padding-bottom: 27.25%;
     .swiper-img
       width 100%
 
