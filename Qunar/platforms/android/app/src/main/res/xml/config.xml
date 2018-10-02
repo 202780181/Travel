@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.cordova.Qunar" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
+    <name>去哪网</name>
+    <description>
+        全网app、随时随地想玩就玩
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Dong Yon
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="market:*" />
+    <icon density="ldpi" src="res/icon/android/logo.jpg" />
+    <icon density="mdpi" src="res/icon/android/logo.jpg" />
+    <icon density="hdpi" src="res/icon/android/logo.jpg" />
+    <icon density="xhdpi" src="res/icon/android/logo.jpg" />
+    <icon density="xxhdpi" src="res/icon/android/logo.jpg" />
+    <icon density="xxxhdpi" src="res/icon/android/logo.jpg" />
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="FadeSplashScreen" value="false" />
+    <preference name="FadeSplashScreenDuration" value="750" />
+</widget>

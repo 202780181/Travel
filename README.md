@@ -1,30 +1,8 @@
-# travel
+# 简单入门的vue(去哪网App)项目
 
-> A Vue.js Quna project
+  --项目默认方式--默认vue项目运行
 
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+  Alphabet.vue 页面的性能优化
+    ①:使用函数节流的方式
+       手指或鼠标在heandleTouchMove 方法执行的时候他的执行评率是非常高的
+       我们通过节流限制函数执行的评率，具体代码参考 Alphabet.vue的heandleTouchMove()方法      
