@@ -16,11 +16,11 @@ Vue.use(VueAwesomeSwiper)
 fastClick.attach(document.body)
 
 
-  new Vue({
-    el: '#app',
-    router,
-    components: { App },
-    template: '<App/>'
-  })
+new Vue({
+  el: '#app',
+  router,
+  components: { App },
+  template: '<App/>'
+})
 
 

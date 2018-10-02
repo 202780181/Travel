@@ -1,24 +1,17 @@
 <template>
     <div class="lsit">
       <ul>
-        <li class="item">A</li>
-        <li class="item">A</li>
-        <li class="item">A</li>
-        <li class="item">A</li>
-        <li class="item">A</li>
-        <li class="item">A</li>
-        <li class="item">A</li>
-        <li class="item">A</li>
-        <li class="item">A</li>
-        <li class="item">A</li>
-        <li class="item">A</li>
+        <li class="item" v-for="(item,key) of cityes" :key="key">{{key}}</li>
       </ul>
     </div>
 </template>
 
 <script>
     export default {
-        name: "Alphabet"
+        name: "Alphabet",
+      props:{
+        cityes:Object
+      }
     }
 </script>
 
@@ -30,11 +23,11 @@
     justify-content center
     position absolute
     width .4rem
-    right 0
+    right .1rem
     top 1.58rem
     bottom 0
     .item
-      line-height .44rem
+      line-height 0.54rem
       text-align center
       color $bgColor
 </style>

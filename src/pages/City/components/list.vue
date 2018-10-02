@@ -21,55 +21,16 @@
         <div class="aret">
           <div class="title border-topbottom">热门城市</div>
           <div class="button-list">
-            <div class="button-wrapper">
-              <div class="button">北京</div>
-            </div>
-            <div class="button-wrapper">
-              <div class="button">北京</div>
-            </div>
-            <div class="button-wrapper">
-              <div class="button">北京</div>
-            </div>
-            <div class="button-wrapper">
-              <div class="button">北京</div>
+            <div class="button-wrapper" v-for="item of hotCities" :key="item.id">
+              <div class="button">{{item.name}}</div>
             </div>
           </div>
         </div>
-        <div class="aret">
-          <div class="title border-topbottom">A</div>
-          <div class="item-lsit">
+        <div class="aret" v-for="(item,key) of cityes" :key="key">
+          <div class="title border-topbottom">{{key}}</div>
+          <div class="item-lsit" v-for="innerItem of item" :key="innerItem.id">
             <ul>
-              <li class="item border-topbottom">阿富汗</li>
-              <li class="item border-topbottom">阿富汗</li>
-              <li class="item border-topbottom">阿富汗</li>
-              <li class="item border-topbottom">阿富汗</li>
-              <li class="item border-topbottom">阿富汗</li>
-              <li class="item border-topbottom">阿富汗</li>
-              <li class="item border-topbottom">阿富汗</li>
-            </ul>
-          </div>
-          <div class="title border-topbottom">B</div>
-          <div class="item-lsit">
-            <ul>
-              <li class="item border-topbottom">阿富汗</li>
-              <li class="item border-topbottom">阿富汗</li>
-              <li class="item border-topbottom">阿富汗</li>
-              <li class="item border-topbottom">阿富汗</li>
-              <li class="item border-topbottom">阿富汗</li>
-              <li class="item border-topbottom">阿富汗</li>
-              <li class="item border-topbottom">阿富汗</li>
-            </ul>
-          </div>
-          <div class="title border-topbottom">C</div>
-          <div class="item-lsit">
-            <ul>
-              <li class="item border-topbottom">阿富汗</li>
-              <li class="item border-topbottom">阿富汗</li>
-              <li class="item border-topbottom">阿富汗</li>
-              <li class="item border-topbottom">阿富汗</li>
-              <li class="item border-topbottom">阿富汗</li>
-              <li class="item border-topbottom">阿富汗</li>
-              <li class="item border-topbottom">阿富汗</li>
+              <li class="item border-topbottom">{{innerItem.name}}</li>
             </ul>
           </div>
         </div>
@@ -81,9 +42,14 @@
   import Bscroll from 'better-scroll'
     export default {
         name: "list",
+      props:{
+          hotCities:Array,
+          cityes:Object,
+      },
       mounted () {
           this.scroll = new Bscroll(this.$refs.wripper)
-      }
+      },
+
     }
 </script>
 
