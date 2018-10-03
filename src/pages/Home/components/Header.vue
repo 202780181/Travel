@@ -8,7 +8,7 @@
         输入城市/景点/游玩主题</div>
       <router-link to="/city">
         <div class="header-right">
-          {{this.city}}
+          {{this.$store.state.city}}
           <span class="iconfont icon-jiantou arrow-icon"></span>
         </div>
       </router-link>
@@ -51,7 +51,8 @@
       border-radius .1rem
       color #ccc
     .header-right
-      width 1.74rem
+      margin-left .2rem
+      margin-right .2rem
       float right
       font-size .4rem
       line-height 1.1rem

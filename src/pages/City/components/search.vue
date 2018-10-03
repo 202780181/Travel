@@ -6,7 +6,13 @@
 
 <script>
     export default {
-        name: "search"
+        name: "search",
+      methods: {
+        handleCityClick(city){
+          this.$store.dispatch('change',city)
+          this.$router.push('/')
+        }
+      }
     }
 </script>
 
