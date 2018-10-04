@@ -1,7 +1,7 @@
 <template>
     <div class="header">
       <div class="header-left">
-        <div class="iconfont icon-fanhui back-icon"></div>
+        <div class="iconfont icon-saoma back-icon"></div>
       </div>
       <div class="header-input">
         <span class="iconfont icon-sousuo"></span>
