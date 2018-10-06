@@ -1,22 +1,41 @@
 <template>
   <div>
-    <banner></banner>
-    <Header></Header>
+    <detail-banner></detail-banner>
+    <detail-header></detail-header>
+    <detail-list :list="list"></detail-list>
+    <div class="item"></div>
   </div>
 </template>
 
 <script>
-    import banner from './components/Banner'
-    import Header from './components/Header'
+    import DetailBanner from './components/Banner'
+    import DetailHeader from './components/Header'
+    import DetailList from './components/list'
     export default {
         name: "Detail",
       components:{
-        banner,
-        Header
+        DetailBanner,
+        DetailHeader,
+        DetailList
+
+      },
+      data (){
+          return {
+            list:[{
+              title:'成人票'
+            },{
+              title:'学生票'
+            },{
+              title:'儿童票'
+            },{
+              title:'特价票'
+            }]
+          }
       }
     }
 </script>
 
 <style  lang="stylus" scoped>
-
+  .item
+    height 50rem
 </style>

@@ -10,23 +10,23 @@
       "spell":"shanghai",
       "name":"上海"
     },{
-      "id":"47",
+      "id":"654",
       "spell":"xian",
       "name":"西安"
     },{
-      "id":"239",
+      "id":"123515",
       "spell":"sanya",
       "name":"三亚"
     },{
-      "id":"188",
+      "id":"4657",
       "spell":"lijiang",
       "name":"丽江"
     },{
-      "id":"125",
+      "id":"13463",
       "spell":"guilin",
       "name":"桂林"
     }],
-    "cities":[{
+    "cities":{
       "A":[{
         "id":"56",
         "spell":"akesu",
@@ -150,44 +150,44 @@
         "spell":"changzhou",
         "name":"常州"
       },{
-        "id":"86",
+        "id":"87",
         "spell":"chaohu",
         "name":"巢湖"
       },{
-        "id":"87",
+        "id":"88",
         "spell":"chaoyang",
         "name":"朝阳"
       },{
-        "id":"88",
+        "id":"89",
         "spell":"chaozhou",
         "name":"潮州"
       },{
-        "id":"89",
+        "id":"90",
         "spell":"chazhou",
         "name":"郴州"
       },{
-        "id":"90",
+        "id":"91",
         "spell":"chengdu",
         "name":"成都"
       },{
-        "id":"91",
+        "id":"92",
         "spell":"chende",
         "name":"承德"
       },{
-        "id":"92",
+        "id":"93",
         "spell":"chengmai",
         "name":"澄迈"
       }],
       "D":[{
-        "id":"93",
+        "id":"94",
         "spell":"dazhou",
         "name":"达州"
       },{
-        "id":"94",
+        "id":"95",
         "spell":"dali",
         "name":"大理"
       },{
-        "id":"95",
+        "id":"951",
         "spell":"dalian",
         "name":"大连"
       },{
@@ -195,7 +195,7 @@
         "spell":"daqing",
         "name":"大庆"
       },{
-        "id":"97",
+        "id":"971",
         "spell":"datong",
         "name":"大同"
       },{
@@ -534,7 +534,7 @@
         "spell":"laibing",
         "name":"来宾"
       },{
-        "id":"180",
+        "id":"1801",
         "spell":"laiwu",
         "name":"莱芜"
       },{
@@ -738,7 +738,7 @@
         "name":"普宁"
       }],
       "Q":[{
-        "id":"229",
+        "id":"2291",
         "spell":"qitaishan",
         "name":"七台河"
       },{
@@ -771,7 +771,7 @@
         "spell":"rikaze",
         "name":"日喀则"
       },{
-        "id":"234",
+        "id":"2341",
         "spell":"rizhao",
         "name":"日照"
       },{
@@ -813,107 +813,107 @@
         "spell":"taiyuan",
         "name":"太原"
       },{
-        "id":"242",
+        "id":"243",
         "spell":"tonghua",
         "name":"通化"
       },{
-        "id":"242",
+        "id":"244",
         "spell":"tianmen",
         "name":"天门"
       }],
       "W":[{
-        "id":"243",
+        "id":"245",
         "spell":"wanning",
         "name":"万宁"
       },{
-        "id":"244",
+        "id":"246",
         "spell":"weihai",
         "name":"威海"
       },{
-        "id":"245",
+        "id":"247",
         "spell":"weifang",
         "name":"潍坊"
       },{
-        "id":"246",
+        "id":"248",
         "spell":"wuhan",
         "name":"武汉"
       },{
-        "id":"247",
+        "id":"249",
         "spell":"wuzhishan",
         "name":"五指山"
       }],
       "X":[{
-        "id":"248",
+        "id":"2481",
         "spell":"xiamen",
         "name":"厦门"
       },{
-        "id":"248",
+        "id":"2483",
         "spell":"xian",
         "name":"西安"
       },{
-        "id":"249",
+        "id":"2494",
         "spell":"xining",
         "name":"西宁"
       },{
-        "id":"250",
+        "id":"2505",
         "spell":"xianggang",
         "name":"香港"
       },{
-        "id":"251",
+        "id":"2516",
         "spell":"xiangxi",
         "name":"湘西"
       },{
-        "id":"252",
+        "id":"2562",
         "spell":"xiangyang",
         "name":"襄阳"
       },{
-        "id":"253",
+        "id":"2573",
         "spell":"xinxiang",
         "name":"新乡"
       },{
-        "id":"254",
+        "id":"2524",
         "spell":"xuchagn",
         "name":"许昌"
       }],
       "Y":[{
-        "id":"255",
+        "id":"2545",
         "spell":"yaan",
         "name":"雅安"
       },{
-        "id":"256",
+        "id":"2556",
         "spell":"yatai",
         "name":"烟台"
       },{
-        "id":"257",
+        "id":"2567",
         "spell":"yichun",
         "name":"宜昌"
       },{
-        "id":"258",
+        "id":"2568",
         "spell":"yiyang",
         "name":"益阳"
       },{
-        "id":"259",
+        "id":"2859",
         "spell":"yueyang",
         "name":"岳阳"
       },{
-        "id":"260",
+        "id":"2690",
         "spell":"yunling",
         "name":"云林"
       }],
       "Z":[{
-        "id":"261",
+        "id":"2621",
         "spell":"zaozhuang",
         "name":"枣庄"
       },{
-        "id":"262",
+        "id":"2642",
         "spell":"zhenjiang",
         "name":"湛江"
       },{
-        "id":"263",
+        "id":"2653",
         "spell":"zhangjiajie",
         "name":"张家界"
       },{
-        "id":"264",
+        "id":"2664",
         "spell":"zhangjiakou",
         "name":"张家口"
       },{
@@ -929,6 +929,6 @@
         "spell":"zhangzhou",
         "name":"漳州"
       }]
-    }]
+    }
   }
 }

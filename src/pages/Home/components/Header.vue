@@ -1,7 +1,7 @@
 <template>
     <div class="header">
       <div class="header-left">
-        <div class="iconfont icon-saoma back-icon"></div>
+        <router-link tag="div" to="/sweep" class="iconfont icon-saoma back-icon"></router-link>
       </div>
       <div class="header-input">
         <span class="iconfont icon-sousuo"></span>

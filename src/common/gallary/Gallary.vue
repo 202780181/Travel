@@ -20,7 +20,7 @@
               pagination:'.swiper-pagination',
               paginationType:'fraction',
               observerParents:true,
-              observer:true   //  解决swiper 点击弹出的宽度不适应问题
+              observer:true
             }
           }
       },

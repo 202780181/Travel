@@ -14,7 +14,7 @@ Vue.config.productionTip = false
 Vue.use(VueAwesomeSwiper)
 fastClick.attach(document.body)
 
-
+document.addEventListener('deviceready', function() {
 new Vue({
   el: '#app',
   router,
@@ -22,5 +22,5 @@ new Vue({
   components: { App },
   template: '<App/>'
 })
-
+}, false)
 

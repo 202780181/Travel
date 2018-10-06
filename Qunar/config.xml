@@ -24,16 +24,14 @@
         <icon density="xhdpi" src="res/icon/android/logo.jpg" />
         <icon density="xxhdpi" src="res/icon/android/logo.jpg" />
         <icon density="xxxhdpi" src="res/icon/android/logo.jpg" />
-
-
-      <splash density="land-hdpi" src="res/screen/android/57860b489ed71.jpg" />
-      <splash density="land-ldpi" src="res/screen/android/57860b489ed71.jpg" />
-      <splash density="land-mdpi" src="res/screen/android/57860b489ed71.jpg" />
-      <splash density="land-xhdpi" src="res/screen/android/57860b489ed71.jpg" />
-      <splash density="port-hdpi" src="res/screen/android/57860b489ed71.jpg" />
-      <splash density="port-ldpi" src="res/screen/android/57860b489ed71.jpg" />
-      <splash density="port-mdpi" src="res/screen/android/57860b489ed71.jpg" />
-      <splash density="port-xhdpi" src="res/screen/android/57860b489ed71.jpg" />
+        <splash density="land-hdpi" src="res/screen/android/57860b489ed71.jpg" />
+        <splash density="land-ldpi" src="res/screen/android/57860b489ed71.jpg" />
+        <splash density="land-mdpi" src="res/screen/android/57860b489ed71.jpg" />
+        <splash density="land-xhdpi" src="res/screen/android/57860b489ed71.jpg" />
+        <splash density="port-hdpi" src="res/screen/android/57860b489ed71.jpg" />
+        <splash density="port-ldpi" src="res/screen/android/57860b489ed71.jpg" />
+        <splash density="port-mdpi" src="res/screen/android/57860b489ed71.jpg" />
+        <splash density="port-xhdpi" src="res/screen/android/57860b489ed71.jpg" />
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
@@ -42,13 +40,11 @@
     <plugin name="cordova-plugin-splashscreen" spec="^5.0.2" />
     <preference name="FadeSplashScreen" value="false" />
     <preference name="FadeSplashScreenDuration" value="750" />
+    <allow-navigation href="http://*/*" />
+    <allow-navigation href="https://*/*" />
+    <allow-navigation href="data:*" />
+    <access origin="*" />
+    <access origin="http://*/*" />
+    <access origin="https://*/*" />
     <engine name="android" spec="^7.1.1" />
-
-  <allow-navigation href="http://*/*" />
-  <allow-navigation href="https://*/*" />
-  <allow-navigation href="data:*" />
-
-  <access origin="*" />
-  <access origin="http://*/*" />
-  <access origin="https://*/*" />
 </widget>

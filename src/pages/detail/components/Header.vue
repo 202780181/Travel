@@ -3,10 +3,7 @@
     <router-link tag="div" to="/" class="headers-abs" v-show="showAbs">
       <div class="iconfont icon-fanhui back-icon"></div>
     </router-link>
-    <div class="headers-fixed"
-         v-show="!showAbs"
-         :style="optionStyle"
-    >
+    <div class="headers-fixed" v-show="!showAbs" :style="optionStyle">
       景点详情
       <router-link to="/">
         <div class="iconfont icon-fanhui back-icon"></div>
@@ -22,20 +19,18 @@
           return {
             showAbs:true,
             optionStyle:{
-              opacity :0
+              opacity :0,
+
             }
           }
       },
       methods:{
         handleScroll () {
-          const top = document.documentElement.scrollTop
+          const  top = document.documentElement.scrollTop
           if (top>70){
-            let opactiy = top/140
-
-            opactiy = opactiy >1 ? 1 :opactiy
-
+            let opacity = top / 140
+            opacity = opacity >1 ? 1:opacity
             this.optionStyle = { opacity }
-
             this.showAbs=false
           }else {
             this.showAbs=true
